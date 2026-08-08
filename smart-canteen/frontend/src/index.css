@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ink text-paper font-body;
+}
+
+/* split-flap token digit look */
+.flap-digit {
+  @apply font-mono bg-panel2 text-signal border border-signalDim/40 rounded-md;
+  text-shadow: 0 0 12px rgba(242, 169, 60, 0.35);
+}
+
+.card {
+  @apply bg-panel border border-white/5 rounded-xl;
+}
+
+.btn-primary {
+  @apply bg-signal text-ink font-body font-semibold px-4 py-2 rounded-lg hover:brightness-110 transition disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.btn-ghost {
+  @apply bg-transparent border border-white/15 text-paper px-4 py-2 rounded-lg hover:bg-white/5 transition;
+}

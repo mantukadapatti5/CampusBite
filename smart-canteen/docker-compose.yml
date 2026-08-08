@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: canteen_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: smart_canteen
+      POSTGRES_USER: canteen_user
+      POSTGRES_PASSWORD: canteen_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - canteen_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U canteen_user -d smart_canteen"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: canteen_backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PORT: 5000
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: smart_canteen
+      DB_USER: canteen_user
+      DB_PASSWORD: canteen_pass
+      JWT_SECRET: change_this_to_a_long_random_secret
+      JWT_EXPIRES_IN: 7d
+      SLOT_CAPACITY: 15
+      SLOT_DURATION_MINUTES: 10
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:5000/api
+    container_name: canteen_frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "4173:4173"
+
+volumes:
+  canteen_db_data:
