@@ -15,27 +15,42 @@ async function seed() {
     // usn_or_id under the hood, these are just easy-to-type values for it.
     await User.bulkCreate([
       {
-        name: 'Demo Student', usn_or_id: 'student', phone: '9900000001',
-        password_hash: await bcrypt.hash('Student@123', 10),
+        name: 'Demo Student', usn_or_id: 'student1', phone: '9900000001',
+        password_hash: await bcrypt.hash('STUDENT12', 10),
         role: 'student', wallet_balance: 200, referral_code: 'STUDENT001',
       },
       {
-        name: 'Demo Kitchen Staff', usn_or_id: 'kitchen01', phone: '9900000002',
-        password_hash: await bcrypt.hash('Kitchen@123', 10),
+        name: 'Demo Kitchen Staff', usn_or_id: 'kitchen1', phone: '9900000002',
+        password_hash: await bcrypt.hash('KITCHEEN12', 10),
         role: 'canteen_staff', referral_code: 'KITCHEN001',
       },
       {
-        name: 'Demo Manager', usn_or_id: 'manager01', phone: '9900000004',
-        password_hash: await bcrypt.hash('Manager@123', 10),
+        name: 'Demo Manager', usn_or_id: 'manager', phone: '9900000004',
+        password_hash: await bcrypt.hash('MANAGER12', 10),
         role: 'manager', referral_code: 'MANAGER001',
       },
       {
-        name: 'Demo Admin', usn_or_id: 'admin01', phone: '9900000003',
-        password_hash: await bcrypt.hash('Admin@123', 10),
+        name: 'Demo Admin', usn_or_id: 'admin1', phone: '9900000003',
+        password_hash: await bcrypt.hash('ADMIN12', 10),
         role: 'admin', referral_code: 'ADMIN00001',
       },
+      {
+        name: 'Demo Student (Alternate)', usn_or_id: '4at22cs000', phone: '9900000011',
+        password_hash: await bcrypt.hash('password123', 10),
+        role: 'student', wallet_balance: 200, referral_code: 'STUDENT002',
+      },
+      {
+        name: 'Demo Kitchen Staff (Alternate)', usn_or_id: 'staff001', phone: '9900000012',
+        password_hash: await bcrypt.hash('password123', 10),
+        role: 'canteen_staff', referral_code: 'STAFF002',
+      },
+      {
+        name: 'Demo Admin (Alternate)', usn_or_id: 'admin001', phone: '9900000013',
+        password_hash: await bcrypt.hash('password123', 10),
+        role: 'admin', referral_code: 'ADMIN00002',
+      },
     ]);
-    console.log('Demo users: student/Student@123, kitchen01/Kitchen@123, manager01/Manager@123, admin01/Admin@123');
+    console.log('Demo users: STUDENT1/STUDENT12, KITCHEN1/KITCHEEN12, MANAGER/MANAGER12, ADMIN1/ADMIN12');
 
     // --- categories + menu items ---
     for (const cat of dataset.categories) {

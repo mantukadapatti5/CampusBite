@@ -225,10 +225,10 @@ docker compose exec backend npm run seed
 ```
 
 Demo logins (USN/staff ID is the username, not email — case-insensitive):
-- `student` / `Student@123` — Student portal (`/student/*`), ₹200 wallet balance seeded
-- `kitchen01` / `Kitchen@123` — Kitchen portal (`/kitchen/*`)
-- `manager01` / `Manager@123` — Manager portal (`/manager/*`)
-- `admin01` / `Admin@123` — Admin portal (`/admin/*`, plus everything Manager can access)
+- `STUDENT1` / `STUDENT12` — Student portal (`/student/*`), ₹200 wallet balance seeded
+- `KITCHEN1` / `KITCHEEN12` — Kitchen portal (`/kitchen/*`)
+- `MANAGER` / `MANAGER12` — Manager portal (`/manager/*`)
+- `ADMIN1` / `ADMIN12` — Admin portal (`/admin/*`, plus everything Manager can access)
 
 Demo coupon codes: `WELCOME10` (10% off, no minimum), `BIGLUNCH20` (20% off,
 min order ₹100).

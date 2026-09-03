@@ -65,7 +65,7 @@ export default function Login() {
         <Link to="/forgot-password" className="text-paper/50 hover:text-signal">Forgot password?</Link>
       </div>
       <p className="text-xs text-paper/30 mt-3">
-        Demo: 4AT22CS000 / password123 (also STAFF001, ADMIN001)
+        Demo roles: STUDENT1 / STUDENT12 · KITCHEN1 / KITCHEEN12 · MANAGER / MANAGER12 · ADMIN1 / ADMIN12
       </p>
     </div>
   );

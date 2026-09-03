@@ -218,6 +218,10 @@ exports.getAllOrders = async (req, res) => {
 };
 
 exports.getOrderById = async (req, res) => {
+  if (!/^\d+$/.test(req.params.id)) {
+    return res.status(400).json({ error: 'Order ID must be a number' });
+  }
+
   const order = await Order.findByPk(req.params.id, {
     include: [
       { model: OrderItem, as: 'items', include: [{ model: MenuItem, as: 'menuItem' }] },
