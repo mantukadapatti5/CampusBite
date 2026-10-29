@@ -1,0 +1,83 @@
+{
+  "categories": [
+    {
+      "name": "Breakfast",
+      "slug": "breakfast",
+      "sort_order": 1,
+      "items": [
+        { "name": "Idli Sambar (2 pcs)", "description": "Steamed rice cakes with sambar and chutney", "price": 25, "stock_quantity": 60, "prep_time_minutes": 4, "is_veg": true, "ingredients": "Rice, urad dal, toor dal, vegetables, coconut", "calories": 190, "allergens": "none" },
+        { "name": "Masala Dosa", "description": "Crispy dosa with potato masala filling", "price": 35, "stock_quantity": 50, "prep_time_minutes": 6, "is_veg": true, "ingredients": "Rice, urad dal, potato, onion, spices", "calories": 320, "allergens": "none" },
+        { "name": "Plain Dosa", "description": "Classic crispy rice-and-lentil crepe", "price": 25, "stock_quantity": 50, "prep_time_minutes": 5, "is_veg": true },
+        { "name": "Vada (2 pcs)", "description": "Crispy lentil fritters with sambar", "price": 20, "stock_quantity": 60, "prep_time_minutes": 4, "is_veg": true },
+        { "name": "Poori Bhaji", "description": "Fried puffed bread with potato curry", "price": 30, "stock_quantity": 40, "prep_time_minutes": 6, "is_veg": true },
+        { "name": "Upma", "description": "Semolina cooked with vegetables and spices", "price": 20, "stock_quantity": 45, "prep_time_minutes": 5, "is_veg": true },
+        { "name": "Bread Omelette", "description": "Toasted bread with masala omelette", "price": 30, "stock_quantity": 35, "prep_time_minutes": 5, "is_veg": false }
+      ]
+    },
+    {
+      "name": "Lunch",
+      "slug": "lunch",
+      "sort_order": 2,
+      "items": [
+        { "name": "Veg Meals (Full)", "description": "Rice, sambar, rasam, curry, curd, papad", "price": 55, "stock_quantity": 80, "prep_time_minutes": 3, "is_veg": true },
+        { "name": "Curd Rice", "description": "Rice mixed with curd and tempering", "price": 30, "stock_quantity": 50, "prep_time_minutes": 3, "is_veg": true },
+        { "name": "Veg Biryani", "description": "Mixed vegetable biryani with raita", "price": 50, "stock_quantity": 40, "prep_time_minutes": 8, "is_veg": true },
+        { "name": "Chicken Biryani", "description": "Spiced chicken biryani with raita", "price": 80, "stock_quantity": 30, "prep_time_minutes": 10, "is_veg": false, "ingredients": "Basmati rice, chicken, yogurt, spices", "calories": 650, "allergens": "dairy" },
+        { "name": "Chapati with Curry (2 pcs)", "description": "Wheat flatbread with vegetable curry", "price": 35, "stock_quantity": 50, "prep_time_minutes": 5, "is_veg": true },
+        { "name": "Rajma Rice", "description": "Kidney bean curry with steamed rice", "price": 40, "stock_quantity": 40, "prep_time_minutes": 5, "is_veg": true }
+      ]
+    },
+    {
+      "name": "Snacks",
+      "slug": "snacks",
+      "sort_order": 3,
+      "items": [
+        { "name": "Veg Puff", "description": "Flaky pastry with spiced vegetable filling", "price": 20, "stock_quantity": 60, "prep_time_minutes": 2, "is_veg": true },
+        { "name": "Samosa (2 pcs)", "description": "Crispy fried pastry with potato filling", "price": 20, "stock_quantity": 60, "prep_time_minutes": 2, "is_veg": true },
+        { "name": "Chilli Bajji (4 pcs)", "description": "Deep-fried spicy chilli fritters", "price": 25, "stock_quantity": 45, "prep_time_minutes": 5, "is_veg": true },
+        { "name": "Onion Pakoda", "description": "Crispy onion fritters", "price": 25, "stock_quantity": 45, "prep_time_minutes": 5, "is_veg": true },
+        { "name": "Veg Sandwich", "description": "Grilled sandwich with vegetables and chutney", "price": 30, "stock_quantity": 40, "prep_time_minutes": 4, "is_veg": true },
+        { "name": "Maggi Noodles", "description": "Masala instant noodles", "price": 30, "stock_quantity": 50, "prep_time_minutes": 6, "is_veg": true },
+        { "name": "Chicken Roll", "description": "Rolled paratha with chicken filling", "price": 45, "stock_quantity": 30, "prep_time_minutes": 6, "is_veg": false }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "slug": "beverages",
+      "sort_order": 4,
+      "items": [
+        { "name": "Filter Coffee", "description": "South Indian style filter coffee", "price": 15, "stock_quantity": 100, "prep_time_minutes": 2, "is_veg": true },
+        { "name": "Masala Tea", "description": "Spiced milk tea", "price": 12, "stock_quantity": 100, "prep_time_minutes": 2, "is_veg": true },
+        { "name": "Black Tea", "description": "Plain black tea", "price": 10, "stock_quantity": 80, "prep_time_minutes": 2, "is_veg": true },
+        { "name": "Fresh Lime Juice", "description": "Sweet or salted lime juice", "price": 20, "stock_quantity": 50, "prep_time_minutes": 3, "is_veg": true },
+        { "name": "Mosambi Juice", "description": "Fresh sweet lime juice", "price": 25, "stock_quantity": 40, "prep_time_minutes": 3, "is_veg": true },
+        { "name": "Watermelon Juice", "description": "Fresh watermelon juice", "price": 25, "stock_quantity": 40, "prep_time_minutes": 3, "is_veg": true },
+        { "name": "Buttermilk", "description": "Spiced chilled buttermilk", "price": 15, "stock_quantity": 50, "prep_time_minutes": 2, "is_veg": true },
+        { "name": "Cold Coffee", "description": "Chilled blended coffee with ice cream", "price": 35, "stock_quantity": 30, "prep_time_minutes": 4, "is_veg": true }
+      ]
+    },
+    {
+      "name": "Ice Cream & Desserts",
+      "slug": "ice-cream",
+      "sort_order": 5,
+      "items": [
+        { "name": "Vanilla Cup", "description": "Classic vanilla ice cream cup", "price": 20, "stock_quantity": 40, "prep_time_minutes": 1, "is_veg": true },
+        { "name": "Chocolate Cup", "description": "Rich chocolate ice cream cup", "price": 25, "stock_quantity": 40, "prep_time_minutes": 1, "is_veg": true },
+        { "name": "Butterscotch Cup", "description": "Butterscotch ice cream cup", "price": 25, "stock_quantity": 35, "prep_time_minutes": 1, "is_veg": true },
+        { "name": "Kulfi Stick", "description": "Traditional Indian kulfi", "price": 20, "stock_quantity": 30, "prep_time_minutes": 1, "is_veg": true },
+        { "name": "Gulab Jamun (2 pcs)", "description": "Sweet fried dumplings in sugar syrup", "price": 20, "stock_quantity": 40, "prep_time_minutes": 1, "is_veg": true }
+      ]
+    },
+    {
+      "name": "Evening / Night",
+      "slug": "night",
+      "sort_order": 6,
+      "items": [
+        { "name": "Chapati Roll", "description": "Rolled chapati with vegetable filling", "price": 30, "stock_quantity": 35, "prep_time_minutes": 5, "is_veg": true },
+        { "name": "Fried Rice", "description": "Vegetable fried rice", "price": 45, "stock_quantity": 35, "prep_time_minutes": 7, "is_veg": true },
+        { "name": "Noodles", "description": "Vegetable hakka noodles", "price": 45, "stock_quantity": 35, "prep_time_minutes": 7, "is_veg": true },
+        { "name": "Egg Bhurji with Chapati", "description": "Scrambled spiced eggs with chapati", "price": 40, "stock_quantity": 30, "prep_time_minutes": 6, "is_veg": false }
+      ]
+    }
+  ]
+}
